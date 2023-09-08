@@ -54,4 +54,7 @@ return require('packer').startup(function(use)
   use {'chriskempson/base16-vim'}
   use {'tpope/vim-vividchalk'}
   use { 'rose-pine/neovim', as = 'rose-pine' }
+
+  -- Copilot
+  use {'github/copilot.vim'}
 end)
