@@ -46,9 +46,14 @@ return require('packer').startup(function(use)
   use {'ryanoasis/vim-devicons'}
   use {'nvim-tree/nvim-web-devicons'}
   use {'scrooloose/nerdtree'}
+  use {
+    'nvim-lualine/lualine.nvim', 
+    requires={'nvim-tree/nvim-web-devicons', opt = true}
+  }
 
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
+  use{'lewis6991/gitsigns.nvim'}
   
   -- colorscheme
   use {'chriskempson/base16-vim'}
