@@ -51,6 +51,13 @@ return require('packer').startup(function(use)
     requires={'nvim-tree/nvim-web-devicons', opt = true}
   }
 
+  -- harpoon
+  use {
+    'ThePrimeagen/harpoon',
+    branch = 'harpoon2',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
   use{'lewis6991/gitsigns.nvim'}
